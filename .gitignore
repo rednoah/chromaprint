@@ -39,3 +39,6 @@ src/Debug
 src/Release
 fpcalc
 fpcmp
+dist
+Doxyfile
+fpcalc.Info.plist
