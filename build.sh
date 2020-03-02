@@ -16,3 +16,4 @@ make install
 
 # test
 "$PWD/dist/bin/fpcalc" -version
+otool -L "$PWD/dist/bin/fpcalc"
