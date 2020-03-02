@@ -1,0 +1,14 @@
+prefix=/Users/runner/runners/2.164.0/work/ffmpeg-build/ffmpeg-build/ffmpeg-4.2.2-audio-macos-x86_64
+exec_prefix=${prefix}
+libdir=/Users/runner/runners/2.164.0/work/ffmpeg-build/ffmpeg-build/ffmpeg-4.2.2-audio-macos-x86_64/lib
+includedir=/Users/runner/runners/2.164.0/work/ffmpeg-build/ffmpeg-build/ffmpeg-4.2.2-audio-macos-x86_64/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.54.100
+Requires: libswresample >= 3.5.100, libavutil >= 56.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/Users/runner/runners/2.164.0/work/ffmpeg-build/ffmpeg-build/ffmpeg-4.2.2-audio-macos-x86_64
+exec_prefix=${prefix}
+libdir=/Users/runner/runners/2.164.0/work/ffmpeg-build/ffmpeg-build/ffmpeg-4.2.2-audio-macos-x86_64/lib
+includedir=/Users/runner/runners/2.164.0/work/ffmpeg-build/ffmpeg-build/ffmpeg-4.2.2-audio-macos-x86_64/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.57.100
+Requires: libavutil >= 56.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}

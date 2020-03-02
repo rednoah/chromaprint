@@ -1,0 +1,14 @@
+prefix=/Users/runner/runners/2.164.0/work/ffmpeg-build/ffmpeg-build/ffmpeg-4.2.2-audio-macos-x86_64
+exec_prefix=${prefix}
+libdir=/Users/runner/runners/2.164.0/work/ffmpeg-build/ffmpeg-build/ffmpeg-4.2.2-audio-macos-x86_64/lib
+includedir=/Users/runner/runners/2.164.0/work/ffmpeg-build/ffmpeg-build/ffmpeg-4.2.2-audio-macos-x86_64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.31.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -framework CoreFoundation -framework CoreVideo -framework CoreMedia
+Libs.private: 
+Cflags: -I${includedir}
